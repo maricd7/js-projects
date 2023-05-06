@@ -1,0 +1,145 @@
+/* styles.css */
+
+/* Opšti stilizovanje */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1.site-heading {
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Stilizovanje forme */
+.input-wrapper {
+    margin-bottom: 20px;
+}
+
+.input-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Stilizovanje stakla i vode */
+.glass {
+    width: 100px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.water {
+    width: 100%;
+    position: absolute;
+    height: 0%;
+    bottom: 0;
+    background-color: blue;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.current {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+.userGoalNumber {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Stilizovanje dugmeta za brisanje */
+.clear {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* styles.css */
+
+/* Opšti stilizovanje */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1.site-heading {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h2.ent-goal {
+    text-align: center;
+}
+
+.dailygoal-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.dailygoal-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Stilizacija za mobilne uređaje */
+@media only screen and (max-width: 600px) {
+    h1.site-heading {
+        margin-top: 50px;
+    }
+}
