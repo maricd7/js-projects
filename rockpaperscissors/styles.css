@@ -1,0 +1,54 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .game-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .player-choice, .computer-choice {
+    text-align: center;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  /* Images */
+  .option-img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 600px) {
+    .game-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
