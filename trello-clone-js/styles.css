@@ -1,0 +1,74 @@
+body{
+    background-image: url('https://images.unsplash.com/photo-1687093777245-bc60c636ddf0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80.jpg');
+}
+.lists-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 16px;
+  }
+  
+  .create-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .list {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .list-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 5px;
+    cursor: move;
+    height: 48px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  .lista-class{
+    padding: 48px;
+    width: 320px;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+  input {
+    width:140px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
