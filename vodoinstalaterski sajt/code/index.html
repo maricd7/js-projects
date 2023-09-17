@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     
 </head>
-<body class="bg-#fcfcfc">
+<body class="bg-#fcfcfc " >
    <nav class=" items-center fixed w-full p-6 flex direction-column justify-between bg-#003366">
     <h4 class="logo 48px text-white">LOGO</h4>
     <ul class="flex items-center ">
@@ -19,22 +19,26 @@
         p-2 rounded-md font-semibold hover:bg-orange-400' >Kontaktiraj me</button>
     </ul>
    </nav>
-   <main class="pt-24 pl-8 pr-8 pb-8 flex justify-between items-center">
-    <div>
+   <main class="pt-24 pl-8 pr-8 pb-8 flex justify-center items-center h-screen bg-no-repeat bg-cover bg-center	 bg-[url('https://cdn.pixabay.com/photo/2018/01/29/07/55/modern-minimalist-bathroom-3115450_1280.jpg')] ">
+    <div class="absolute inset-0 bg-white opacity-50 z-10"></div>
+    <div class="flex justify-center flex-col max-w-4xl items-center	z-20 ">
         
-        <h2 class="font-bold text-5xl blue-color">
+        <h2 class="font-bold text-6xl blue-color text-center mt-16 mb-8">
             Efikasna Vodoinstalaterska Rešenja od Stručnjaka!</h2>
+        <h4 class="mb-16">Kvalitetna i Pouzdana Vodoinstalacija za Vaš Dom ili Posao.</h4>
        
-        <button class='primary_btn text-white mr-4
+        <div class="flex gap-4">
+            <button class=' w-48 primary_btn text-white
         p-2 rounded-md font-semibold mt-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] hover:bg-amber-600 [0_35px_60px_-15px_rgba(0,0,0,1.4) 		]' >Kontaktiraj me</button>
-        <button class=' blue-color border-2 border-blue
+        <button class=' w-48 blue-color border-2 border-blue
         p-2 rounded-md font-semibold mt-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] secondary-hover [0_35px_60px_-15px_rgba(0,0,0,1.4)	] hover:text-white ' >Pogledaj galeriju</button>
+        </div>
     </div>
     
-    <img class="w-400 h-400" src="resources/main-removebg-preview.png">
+
    </main>
 
-   <section class="p-8">
+   <section class="p-8 mr-48 ml-48">
     
     <h1 class="text-5xl font-bold mb-8 blue-color"	>Usluge</h1>
     <div class="flex ">
@@ -46,7 +50,7 @@
                 Obezbedićemo brzo i efikasno rešenje za sve vaše vodoinstalaterske probleme.</p>
             
         </div>
-        <div class="flex flex-col justify-center items-center w-full border-2 rounded-3xl	 border-blue p-8">
+        <div class="flex flex-col justify-center items-center w-full border-2 rounded-3xl	 border-blue p-8 hover-p">
             <img src="resources/usluga-1.png">
             <h4 class="text 2xl font-semibold">Popravke</h4>
             <p class="text-black max-w-lg text-center">Naša stručna ekipa vodoinstalatera pružaširok spektar usluga popravki, 
@@ -57,7 +61,7 @@
     </div>
    </section>
   
-   <section class="p-8">
+   <section class="p-8 mr-48 ml-48">
     <h1 class="text-5xl font-bold mb-8 blue-color"	>Galerija</h1>
       <div class="flex ">
         <img src="resources/galerija1.jpeg" class="w-48"/>
@@ -65,7 +69,7 @@
       </div>
      
     </section>
-    <section class="p-8">
+    <section class="p-8 mr-48 ml-48">
         <h1 class="text-5xl font-bold  blue-color">Kontakt</h1>
         <div class="flex">
             <form class="w-full ">
@@ -88,6 +92,11 @@
         </div>
     
    </section>
+   <footer class="bg-gray-900 py-4 text-white text-center">
+  <div class="container mx-auto">
+    <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+  </div>
+</footer>
    <script  src="app.js"></script>
 </body>
 </html>
