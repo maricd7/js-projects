@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+   font-family: 'Lato' , sans-serif;
+   scroll-behavior: smooth;
+}
+.primary_btn{
+
+    background-color: #FF9900;
+    
+}
+nav{
+    background-color: #003366;
+    z-index:999 ;
+}
+a{
+  margin: 0;
+  padding: 0;
+}
+
+.blue-color{
+   color: #003366;
+}
+.background-blue{
+    background-color: #003366;
+}
+
+.border-blue{
+    border:2px solid #003366
+}
+.secondary-hover:hover{
+    background-color: #003366;
+}
+.nav-link{
+  cursor: pointer;
+}
+.nav-link:hover{
+  color: #FF9900;
+}
+
+
+/* GALLERY */
+
+
+
+.img-div {
+  width: 100%;
+  height: auto; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease;
+}
+
+.img-div:hover {
+  transform: scale(1.05); 
+}
+
+
+@media (max-width: 768px) {
+  .gallery-wrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+/* ANIMACIJE */
+.ease-in {
+  opacity: 0; /* Start with 0 opacity */
+  transform: translateY(20px); /* Start 20px below its final position */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Apply easing */
+}
+
+.ease-in.visible {
+  opacity: 1; /* When the element becomes visible, set opacity to 1 */
+  transform: translateY(0); /* Bring it to its final position */
+}
