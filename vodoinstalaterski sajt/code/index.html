@@ -6,62 +6,66 @@
     <title>Vodoinstalacije</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-    
+    <script defer src="app.js"></script>
 </head>
 <body class="bg-#fcfcfc " >
-   <nav class=" items-center fixed w-full p-6 flex direction-column justify-between bg-#003366">
+   <nav class=" items-center fixed w-full p-6 flex direction-column justify-between bg-#003366 pr-48 pl-48 pb-8 pt-8 md:pr-8 md:pl-8">
     <h4 class="logo 48px text-white">LOGO</h4>
-    <ul class="flex items-center ">
-        <li class="mr-8 text-white">Početna</li>
-        <li class="mr-8 text-white">Galerija</li>
-        <li class="mr-8 text-white">Usluge</li>
+    <ul class="flex items-center hidden md:flex">
+        <li class="mr-8 text-white nav-link"  >Početna</li>
+        <li class="mr-8 text-white nav-link" >Galerija</li>
+        <li class="mr-8 text-white nav-link"  >Usluge</li>
         <button class='primary_btn text-white 
-        p-2 rounded-md font-semibold hover:bg-orange-400' >Kontaktiraj me</button>
+        p-2 rounded-md font-semibold hover:bg-amber-400' >Kontaktiraj me</button>
     </ul>
+    <div class="iconify flex md:hidden"></div>
+
    </nav>
    <main class="pt-24 pl-8 pr-8 pb-8 flex justify-center items-center h-screen bg-no-repeat bg-cover bg-center	 bg-[url('https://cdn.pixabay.com/photo/2018/01/29/07/55/modern-minimalist-bathroom-3115450_1280.jpg')] ">
     <div class="absolute inset-0 bg-white opacity-50 z-10"></div>
     <div class="flex justify-center flex-col max-w-4xl items-center	z-20 ">
         
-        <h2 class="font-bold text-6xl blue-color text-center mt-16 mb-8">
+        <h2 class="font-extrabold	 text-6xl blue-color text-center mt-16 mb-8 ease-in">
             Efikasna Vodoinstalaterska Rešenja od Stručnjaka!</h2>
-        <h4 class="mb-16">Kvalitetna i Pouzdana Vodoinstalacija za Vaš Dom ili Posao.</h4>
+        <h4 class="mb-16 ease-in">Kvalitetna i Pouzdana Vodoinstalacija za Vaš Dom ili Posao.</h4>
        
-        <div class="flex gap-4">
-            <button class=' w-48 primary_btn text-white
-        p-2 rounded-md font-semibold mt-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] hover:bg-amber-600 [0_35px_60px_-15px_rgba(0,0,0,1.4) 		]' >Kontaktiraj me</button>
-        <button class=' w-48 blue-color border-2 border-blue
-        p-2 rounded-md font-semibold mt-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] secondary-hover [0_35px_60px_-15px_rgba(0,0,0,1.4)	] hover:text-white ' >Pogledaj galeriju</button>
+        <div class="flex gap-4 items-center ease-in">
+            <a href="#contact">
+                <button class=' w-48 primary_btn text-white
+                p-2 rounded-md font-semibold mt-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] z-50 hover:bg-amber-400 [0_35px_60px_-15px_rgba(0,0,0,1.4)]' >Kontaktiraj me</button>
+            </a>
+           
+            <a href="#gallery">
+                <button class=' w-48 blue-color border-2 border-blue
+                p-2 rounded-md font-semibold mt-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] secondary-hover [0_35px_60px_-15px_rgba(0,0,0,1.4)	] hover:text-white ' >Pogledaj galeriju</button>
+            </a>
         </div>
     </div>
     
 
    </main>
 
-   <section class="p-8 mr-48 ml-48">
-    
-    <h1 class="text-5xl font-bold mb-8 blue-color"	>Usluge</h1>
-    <div class="flex ">
-        <div class="flex flex-col justify-center items-center w-full border-2 rounded-3xl	 mr-16 border-blue p-8">
+   <section class="p-8 mr-48 ml-48 mt-16" id="usluge">
+    <h1 class="text-5xl font-bold mb-8 blue-color service">Usluge</h1>
+    <div class="flex">
+        <div class="flex flex-col justify-center items-center w-full border-2 rounded-3xl mr-16 border-blue p-8 service" data-scrolltrigger="animate-in">
             <img src="resources/usluga-1.png">
             <h4 class="text 2xl font-semibold">Popravke</h4>
-            <p class="text-black max-w-lg text-center">Naša stručna ekipa vodoinstalatera pružaširok spektar usluga popravki, 
+            <p class="text-black max-w-lg text-center">Naša stručna ekipa vodoinstalatera pruža širok spektar usluga popravki, 
                 bilo da je u pitanju curenje cevi, začepljenje sudopere ili popravka WC šolje. 
                 Obezbedićemo brzo i efikasno rešenje za sve vaše vodoinstalaterske probleme.</p>
-            
         </div>
-        <div class="flex flex-col justify-center items-center w-full border-2 rounded-3xl	 border-blue p-8 hover-p">
+        <div class="flex flex-col justify-center items-center w-full border-2 rounded-3xl border-blue p-8 hover-p service" data-scrolltrigger="animate-in">
             <img src="resources/usluga-1.png">
             <h4 class="text 2xl font-semibold">Popravke</h4>
-            <p class="text-black max-w-lg text-center">Naša stručna ekipa vodoinstalatera pružaširok spektar usluga popravki, 
+            <p class="text-black max-w-lg text-center">Naša stručna ekipa vodoinstalatera pruža širok spektar usluga popravki, 
                 bilo da je u pitanju curenje cevi, začepljenje sudopere ili popravka WC šolje. 
                 Obezbedićemo brzo i efikasno rešenje za sve vaše vodoinstalaterske probleme.</p>
-            
         </div>
     </div>
-   </section>
+</section>
   
-   <section class="p-8 mr-48 ml-48">
+   <section class="p-8 mr-48 ml-48 mt-16 gallery" id="gallery">
     <h1 class="text-5xl font-bold mb-8 blue-color"	>Galerija</h1>
       <div class="flex ">
         <img src="resources/galerija1.jpeg" class="w-48"/>
@@ -69,7 +73,7 @@
       </div>
      
     </section>
-    <section class="p-8 mr-48 ml-48">
+    <section class="p-8 mr-48 ml-48 mt-16 contact" id="contact">
         <h1 class="text-5xl font-bold  blue-color">Kontakt</h1>
         <div class="flex">
             <form class="w-full ">
@@ -97,7 +101,10 @@
     <p>&copy; 2023 Your Company Name. All rights reserved.</p>
   </div>
 </footer>
-   <script  src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
 </body>
 </html>
 
