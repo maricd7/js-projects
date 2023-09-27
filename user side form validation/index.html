@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User side form validation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+   <div class="form-container">
+        <h2>Register</h2>
+        <form>
+           <div class="input-container">
+                <label>Username</label>
+                <input placeholder="Enter your username" type="text" id="username">
+                <label class="error-txt error-msg-user"></label>
+           </div>
+           <div class="input-container">
+                <label>Email</label>
+                <input placeholder="Enter your email" type="email" id="email">
+                <label class="error-txt error-msg-email"></label>
+            </div>
+            <div class="input-container">
+                <label>Password</label>
+                <input placeholder="Enter your password" type="password" id="password"> 
+                <label class="error-txt error-msg-pw"></label>
+            </div>
+            <div class="input-container">
+                <label>Confirm Password</label>
+                <input placeholder="Confirm your password" type="password" id="password-re">
+                <label class="error-txt error-msg-pw"></label>
+            </div>
+            <button id="submit">Register</button>
+        </form>
+   </div>
+</body>
+</html>
