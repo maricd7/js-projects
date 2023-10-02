@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif ;
+
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    padding: 1rem ;
+    background-color: #fefefe;
+    margin-bottom: 6rem;
+}
+h1{
+    font-size: 1.5rem;
+    
+}
+h2{
+    font-size: 1.25rem;
+    
+}
+h4{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    font-weight: 400;
+    color: rgb(139, 139, 139);
+}
+input{
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid darkgray;
+    padding: 0.5rem 0.5rem;
+margin-bottom: 1.5rem;
+}
+h3{
+    height: 88px;
+}
+a{
+    color: black;
+}
+.container{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+.recipe-holder{
+    width: 176px;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    margin-top: 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+.recipe-info{
+    margin-top: 0.5rem;
+}
+.recipe-holder img{
+    border-radius: 0.75rem;
+    width: 100%;
+}
+.nav-bar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    z-index: 999;
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1rem;
+    left: 0;
+}
+.recipe-holder:hover{
+    box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+}
+.hide{
+    display: none;
+}
+.spinner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.banner{
+    position: relative;
+    border-radius: 0.5px;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+.banner img{
+    border-radius: 8px;
+    width: 100%;
+}
+.banner-text{
+    position: absolute;
+    top: 4rem;
+    left: 1rem;
+}
+.banner-text h1 {
+    color: white;
+    
+
+}
+.banner-text h4 {
+    margin-bottom: 1rem;
+    color: white;
+}
+.banner-text button{
+    background-color: #ff5733;
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    color: white;
+    border: none;
+}
