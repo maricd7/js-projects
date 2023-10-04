@@ -8,10 +8,11 @@
     <script defer src="app.js"></script>
     <script defer src="loader.js"></script>
     <script defer src="favorite.js"></script>
+    <script defer src="popUp.js"></script>
 </head>
 <body>
    
-    <h1>Welcome to Chef's Charm</h1>
+    <h1 class="welcome">Welcome to Chef's Charm</h1>
     <h4>Home of the best culinary creations</h4>
     <div class="banner">
     <img src="resources/home-banner.png"/>
@@ -35,7 +36,18 @@
 
 
     </nav>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
    
+
+    <div id="overlay" class="hide"></div>
+    <div id="popUp" style="display: none;">
+        <iconify-icon id="closePopUp" icon="ion:close" width="2rem" height="2rem"></iconify-icon>
+        <div>
+            <h2>GET 10 PREMIUM RECIPES</h2> 
+        <h4>SUBSCRIBE TO OUR NEWSLETTER AND GET NEWS EVERDAY</h4>
+        <input type="text" placeholder="Your email" id="inputPopup">
+        </div>
+        <button>SUBSCRIBE</button>
+    </div>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
 </html>
