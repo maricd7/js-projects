@@ -32,5 +32,18 @@ console.log(reducedNums) ;
 fetch('https://jsonplaceholder.typicode.com/posts')
     .then(response=>response.json())
     .then(data=>{
-            console.log(data.slice(0, 10))
-    })
+        if (data && data.length > 0) {
+            const obj = data[0];
+            console.log(obj);
+            if (obj.hasOwnProperty('userId')) {
+                console.log('true');
+            } else {
+                console.log('false');
+            }
+        } else {
+            console.log('Data is empty or undefined.');
+        }
+    
+
+    }
+    )
