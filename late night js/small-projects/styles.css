@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#input-container{
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+.start-container{
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

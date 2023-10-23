@@ -3,10 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Guesser</title>
     <script defer src="app.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+   <div class="start-container">
+        <h1>Guess the number</h1>
+        <button id="start">Start</button>
+   </div>
+    <div id="input-container">
+        <div id="trys"></div>
+        <input type="number" placeholder="Enter number" id="input"/>
+        <button  id="guess">Guess</button>
+        <div id="hint"></div>
+        <div id="status"></div>
+
+    </div>
 </body>
 </html>
