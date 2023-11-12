@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Notifications</title>
+    <script defer src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="toast-notifications" id="notifications">
+        <div class="toast-notification" id="container">
+            <div class="text-icon">  
+                <iconify-icon id="scs-icon"></iconify-icon>
+                <p>Your request was a success.</p>
+            </div>
+            <iconify-icon id="close-icon"></iconify-icon>
+        </div>
+    </div>
+    <div class="buttons">
+        <button id="success-btn">Success</button>
+        <button id="fail-btn">Fail</button>
+        <button id="alert-btn">Alert</button>
+    </div>
+</body>
+</html>

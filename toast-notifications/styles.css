@@ -1,0 +1,33 @@
+body{
+    height: 100vh;
+    background-color: #fefefe;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+.toast-notifications{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 2rem;
+    right: 2rem;
+
+}
+.toast-notification{
+    display: flex;
+    align-items: center;    
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid lightslategray;
+    justify-content: space-between;
+    gap: 2rem;
+    border-radius: 0.5rem;
+    display: none;
+}
+.text-icon{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: flex-start ;
+}
