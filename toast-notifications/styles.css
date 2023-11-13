@@ -1,11 +1,12 @@
-body{
+body {
     height: 100vh;
-    background-color: #fefefe;
-    position: relative;
+    background-color: #f5f5f5; 
     display: flex;
     align-items: center;
-    justify-content: center ;
+    justify-content: center;
     overflow-y: hidden;
+    overflow-x: hidden;
+    margin: 0;
 }
 .toast-notifications{
     position: absolute;
@@ -14,9 +15,17 @@ body{
     bottom: 2rem;
     right: 2rem;
     gap: 2rem;
-
+    z-index: 1000;
 }
-.toast-notification{
+
+.text-icon{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: flex-start ;
+}
+
+.toast-notification {
     display: flex;
     align-items: center;    
     padding: 1rem;
@@ -25,11 +34,48 @@ body{
     justify-content: space-between;
     gap: 2rem;
     border-radius: 0.5rem;
-    /* display: none; */
+    animation: slideIn 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
-.text-icon{
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.toast-notification .iconify-icon {
+    cursor: pointer;
+    color: #888;
+    font-size: 16px;
+}
+
+.toast-notification .iconify-icon:hover {
+    color: #333;
+}
+
+.buttons {
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    justify-content: flex-start ;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.buttons button {
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    cursor: pointer;
+}
+.toast-notification p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.buttons button {
+    font-family: 'Arial', sans-serif;
 }
