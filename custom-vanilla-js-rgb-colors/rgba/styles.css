@@ -1,0 +1,15 @@
+.input-container{
+    display: flex;
+    gap: 2rem;
+}
+.range-div{
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    gap: 2rem;
+}
+#container{
+    background-color: red;
+    width: 240px;
+    height: 240px;
+}
